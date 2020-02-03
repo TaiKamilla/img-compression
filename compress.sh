@@ -5,46 +5,85 @@ find . -type d | while read foldername; do
     echo "$foldername"
     cd "$foldername"
     for filename in *.jpg; do
-        echo "Compresing $foldername/$filename"
+        echo "Compressing $foldername/$filename"
         mv "$filename" "ORIGINAL_$filename"
-        $( $( file -b --mime-type "ORIGINAL_$filename" | grep -q 'jpeg' ) && convert "ORIGINAL_$filename" -resize '1260x>' -resize 'x1260>'  -sampling-factor 4:2:0 -strip -quality 80 -interlace JPEG -colorspace RGB "$filename" )
+        $( $( file -b --mime-type "ORIGINAL_$filename" | grep -q 'jpeg' ) && convert "ORIGINAL_$filename" -resize '1260x>' -resize 'x1260>'  -sampling-factor 4:2:0 -strip -quality 80 -interlace JPEG -colorspace RGB "$filename" ) || mv "ORIGINAL_$filename" "$filename"
     done;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
+       
     for filename in *.jpeg; do
         echo "Compressing $foldername/$filename"
         mv "$filename" "ORIGINAL_$filename"
-        $( $( file -b --mime-type "ORIGINAL_$filename" | grep -q 'jpeg' ) && convert "ORIGINAL_$filename" -resize '1260x>' -resize 'x1260>'  -sampling-factor 4:2:0 -strip -quality 80 -interlace JPEG -colorspace RGB "$filename" )
+        $( $( file -b --mime-type "ORIGINAL_$filename" | grep -q 'jpeg' ) && convert "ORIGINAL_$filename" -resize '1260x>' -resize 'x1260>'  -sampling-factor 4:2:0 -strip -quality 80 -interlace JPEG -colorspace RGB "$filename" ) || mv "ORIGINAL_$filename" "$filename"
     done;
     for filename in *.JPG; do
         echo "Compressing $foldername/$filename"
         mv "$filename" "ORIGINAL_$filename"
-        $( $( file -b --mime-type "ORIGINAL_$filename" | grep -q 'jpeg' ) && convert "ORIGINAL_$filename" -resize '1260x>' -resize 'x1260>'  -sampling-factor 4:2:0 -strip -quality 80 -interlace JPEG -colorspace RGB "$filename" )
+        $( $( file -b --mime-type "ORIGINAL_$filename" | grep -q 'jpeg' ) && convert "ORIGINAL_$filename" -resize '1260x>' -resize 'x1260>'  -sampling-factor 4:2:0 -strip -quality 80 -interlace JPEG -colorspace RGB "$filename" ) || mv "ORIGINAL_$filename" "$filename"
     done;
     for filename in *.JPEG; do
         echo "Compressing $foldername/$filename"
         mv "$filename" "ORIGINAL_$filename"
-        $( $( file -b --mime-type "ORIGINAL_$filename" | grep -q 'jpeg' ) && convert "ORIGINAL_$filename" -resize '1260x>' -resize 'x1260>'  -sampling-factor 4:2:0 -strip -quality 80 -interlace JPEG -colorspace RGB "$filename" )
+        $( $( file -b --mime-type "ORIGINAL_$filename" | grep -q 'jpeg' ) && convert "ORIGINAL_$filename" -resize '1260x>' -resize 'x1260>'  -sampling-factor 4:2:0 -strip -quality 80 -interlace JPEG -colorspace RGB "$filename" ) || mv "ORIGINAL_$filename" "$filename"
     done;
-
-
-
-
-
-    for filename in *.png; do
-        echo "$foldername/$filename"
-        convert "$filename" "$filename.jpg"
-        mv "$filename" "ORIGINAL_$filename"
-        $( $( file -b --mime-type "$filename.jpg" | grep -q 'jpeg' ) && convert "$filename.jpg" -resize '1260x>' -resize 'x1260>'  -sampling-factor 4:2:0 -strip -quality 80 -interlace JPEG -colorspace RGB "$filename.jpg" ) 
-        rename -v .png.jpg .jpg *.png.jpg
-    done;
-    for filename in *.PNG; do
-        echo "$foldername/$filename"
-        convert "$filename" "$filename.jpg"
-        mv "$filename" "ORIGINAL_$filename"
-        $( $( file -b --mime-type "$filename.jpg" | grep -q 'jpeg' ) && convert "$filename.jpg" -resize '1260x>' -resize 'x1260>'  -sampling-factor 4:2:0 -strip -quality 80 -interlace JPEG -colorspace RGB "$filename.jpg" )
-        rename -v .png.jpg .jpg *.png.jpg
-    done;
-    cd $startpoint  
+    # for filename in *.png; do
+    #     echo "$foldername/$filename"
+    #     convert "$filename" "$filename.jpg"
+    #     mv "$filename" "ORIGINAL_$filename"
+    #     $( $( file -b --mime-type "$filename.jpg" | grep -q 'jpeg' ) && convert "$filename.jpg" -resize '1260x>' -resize 'x1260>'  -sampling-factor 4:2:0 -strip -quality 80 -interlace JPEG -colorspace RGB "$filename.jpg" )
+    #     rename -v .png.jpg .jpg *.png.jpg
+    # done;
+    # for filename in *.PNG; do
+    #     echo "$foldername/$filename"
+    #     convert "$filename" "$filename.jpg"
+    #     mv "$filename" "ORIGINAL_$filename"
+    #     $( $( file -b --mime-type "$filename.jpg" | grep -q 'jpeg' ) && convert "$filename.jpg" -resize '1260x>' -resize 'x1260>'  -sampling-factor 4:2:0 -strip -quality 80 -interlace JPEG -colorspace RGB "$filename.jpg" )
+    #     rename -v .png.jpg .jpg *.png.jpg
+    # done;
+    cd $startpoint
 done
 
 
