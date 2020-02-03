@@ -41,7 +41,7 @@ cd path/to/the/folder/where/the/script/is/
 sh script.sh
 ```
 
-
+------
 
 
 
@@ -71,7 +71,7 @@ From the distro's page, select "Get""
 It will show a new terminal and will ask you to create an user and password
 (For simplicity we will use user: user, password: user)
 
-### ![](.documentation/README/img/ImageMagick_logo-1580722729696.svg) Install ImageMagick
+### ![](.documentation/README/img/ImageMagick_logo-1580723384774.svg) Install ImageMagick
 
 Open CMD and run:
 
@@ -102,7 +102,7 @@ This will ask if you want to change to dash, reply no
 
 Now you should be able to double click on the run file and will compress
 
-
+------
 
 
 
