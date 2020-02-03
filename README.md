@@ -23,7 +23,7 @@ sudo apt-get install imagemagick
 
 
 
-## :rocket: Run the script
+### :rocket: Run the script
 
 First make the script executable
 Open a terminal and run:
@@ -40,6 +40,8 @@ To start the compression
 cd path/to/the/folder/where/the/script/is/
 sh script.sh
 ```
+
+
 
 
 
@@ -99,6 +101,10 @@ This will ask if you want to change to dash, reply no
 ### **:stop_sign: Restart your PC**
 
 Now you should be able to double click on the run file and will compress
+
+
+
+
 
 ## :bug: ERRORS
 
