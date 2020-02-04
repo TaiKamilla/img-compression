@@ -7,6 +7,7 @@ This script will compress all **JPG** and **PNG** files place in the image folde
 ### ![](.documentation/README/img/ImageMagick_logo-1580722729696.svg) ImageMagick
 
 This script requires ImageMagick
+
 To install open a terminal and run:
 
 #### ![](.documentation/README/img/arch.svg) Arch/Manjaro
@@ -26,6 +27,7 @@ sudo apt-get install imagemagick
 ### :rocket: Run the script
 
 First make the script executable
+
 Open a terminal and run:
 
 ```
@@ -34,7 +36,8 @@ chmod +x script.sh
 ```
 
 To start the compression
- Open a terminal and run:
+
+Open a terminal and run:
 
 ```
 cd path/to/the/folder/where/the/script/is/
@@ -43,13 +46,12 @@ sh script.sh
 
 ------
 
-
-
 ## ![](.documentation/README/img/windows.svg) Windows
 
 ### Linux subsystem
 
 To use in windows, requires a Linux subsystem, for that
+
 Open PowerShell as Administrator and run:
 
 ```
@@ -69,6 +71,7 @@ From the distro's page, select "Get""
 ![](.documentation/README/img/2.png)
 
 It will show a new terminal and will ask you to create an user and password
+
 (For simplicity we will use user: user, password: user)
 
 ### ![](.documentation/README/img/ImageMagick_logo-1580723384774.svg) Install ImageMagick
@@ -100,7 +103,7 @@ This will ask if you want to change to dash, reply no
 
 ### **:stop_sign: Restart your PC**
 
-Now you should be able to double click on the run file and will compress
+Now you should be able to double click on the `run.bat` file and will compress
 
 ------
 
