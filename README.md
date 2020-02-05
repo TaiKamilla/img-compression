@@ -2,6 +2,10 @@
 
 This script will compress all **JPG** and **PNG** files place in the image folder that is next to this script
 
+**Important:**
+
+The images to compress need to be in side the image folder (does not matter if they are in a sub-folder)
+
 ## ![](.documentation/README/img/Tux.svg) Linux
 
 ### ![](.documentation/README/img/ImageMagick_logo-1580722729696.svg) ImageMagick
@@ -103,7 +107,7 @@ This will ask if you want to change to dash, reply no
 
 ### **:stop_sign: Restart your PC**
 
-Now you should be able to double click on the `run.bat` file and will compress
+Now you should be able to double click on the `run.bat` file and it will compress
 
 ------
 
@@ -111,4 +115,4 @@ Now you should be able to double click on the `run.bat` file and will compress
 
 ## :bug: ERRORS
 
- In case of error check the `error.log` file generated in by this script**
+ In case of error check the `error.log` file generated in by this script
