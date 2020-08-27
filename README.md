@@ -4,7 +4,7 @@ This script will compress all **JPG** and **PNG** files place in the image folde
 
 **Important:**
 
-The images to compress need to be in side the image folder (does not matter if they are in a sub-folder)
+The images to compress need to be inside the image folder (does not matter if they are in a sub-folder)
 
 ## ![](.documentation/README/img/Tux.svg) Linux
 
