@@ -1,6 +1,6 @@
 # Compress images
 
-This script will compress all **JPG** and **PNG** files place in the image folder that is next to this script
+This script will compress all **JPG** and **PNG** files placed in the image folder that is next to this script
 
 **Important:**
 
